@@ -21,3 +21,8 @@ services:
       - x11
 networks:
   x11:
+endpoints:
+ novnc:
+    - path: /
+      service: novnc
+      port:80
