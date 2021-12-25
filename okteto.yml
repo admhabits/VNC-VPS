@@ -4,4 +4,4 @@ workdir: /okteto
 sync:
   - .:/okteto
 forward:
-  - 9443:9443
+  - 80:80

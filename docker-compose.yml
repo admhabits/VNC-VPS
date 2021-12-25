@@ -15,14 +15,11 @@ services:
       # Adjust to your screen size
       - DISPLAY_WIDTH=3840
       - DISPLAY_HEIGHT=2160
+    annotations:
+      dev.okteto.com/auto-ingress: 'true'
     ports:
       - "80:80"
     networks:
       - x11
 networks:
   x11:
-endpoints:
- novnc:
-    - path: /
-      service: novnc
-      port:80
